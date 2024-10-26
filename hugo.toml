@@ -1,0 +1,70 @@
+######################## default configuration ####################
+baseURL = "https://examplesite.com"
+title = "Torque | IIT Hyderabad"
+theme = "congo"
+
+paginate = 5
+# pagination.pagerSize = 2
+summaryLength = 10
+######################### navigation ##############################
+
+[[menu.main]]
+name = "Home"
+pre = ""
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+pre = "#"
+url = "about"
+weight = 2
+
+[[menu.main]]
+name = "Projects"
+pre = ""
+url = "projects"
+weight = 3
+
+[[menu.main]]
+name = "Blogs"
+pre = ""
+url = "blogs"
+weight = 4
+
+[[menu.main]]
+name = "Team"
+pre = ""
+url = "team"
+weight = 5
+
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+
+############################# social site ########################
+[[params.social]]
+title = "facebook"
+icon = "fa-facebook" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+link = "#"
+
+[[params.social]]
+title = "twitter"
+icon = "fa-twitter" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+link = "#"
+
+[[params.social]]
+title = "instagram"
+icon = "fa-instagram" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+link = "#"
+
+[[params.social]]
+title = "github"
+icon = "fa-github" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+link = "#"
+
+[[params.social]]
+title = "linkedin"
+icon = "fa-linkedin" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
+link = "#"

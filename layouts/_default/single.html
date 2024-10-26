@@ -1,0 +1,25 @@
+
+{{ define "main" }}
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto mt-4 ">
+        <article>
+          <h2 >{{ .Title }}</h2>
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item mr-3" style="color:peachpuff; "><i class="fa fa-edit custom-content " style="color: #61dafb;font-size: 20px; "></i> By {{ .Params.Author }}</li>
+            <li class="list-inline-item" style="color:peachpuff;"><i class="fa fa-calendar custom-content" style="color:#61dafb;font-size: 20px "></i>
+              {{ .PublishDate.Format "02 Jan, 2006" }}</li>
+          </ul>
+          <img src="{{ .Params.Image | absURL }}" alt="{{ .Title }}" class="img-fluid w-100 mb-4">
+          <div class="content custom-content">
+            {{ .Content }}
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

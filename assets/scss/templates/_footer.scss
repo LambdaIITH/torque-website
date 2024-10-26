@@ -1,0 +1,52 @@
+// footer.scss
+.footer {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px;
+  
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+  
+      p {
+        margin: 0;
+        line-height: 1.5;
+        a{
+            text-decoration: none;
+            color: #9241b2;
+        }
+      }
+
+  
+      .quicklinks {
+        margin-top: 20px;
+  
+        h3 {
+          font-size: 1.5em;
+          margin-bottom: 10px;
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          gap: 20px; 
+  
+          li {
+            a {
+              color: #61dafb; 
+              font-size: 24px; 
+              transition: transform 0.3s;
+  
+              &:hover {
+                transform: scale(1.1); 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

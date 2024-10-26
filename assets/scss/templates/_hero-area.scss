@@ -1,0 +1,47 @@
+
+.scroll {
+	height: 70px;
+	overflow: hidden;
+
+	h6 {
+		transform: rotate(-90deg);
+		letter-spacing: 2px;
+		position: relative;
+		font-size: 13px;
+		margin-top: 20px;
+		font-family: $secondary-font;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 30px;
+			height: 1px;
+			background: #9ea0c9;
+			left: 48%;
+			top: -4px;
+			overflow: hidden;
+			animation-name: scroll_animation;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+	}
+}
+
+@keyframes scroll_animation {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-200%);
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	.item-image {
+		width: 100%; /* Make image take full width */
+		margin: 0 auto; /* Center the image */
+	}
+}

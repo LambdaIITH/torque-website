@@ -1,0 +1,72 @@
+<section class="team-section " style="background-color: #333;">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <h3>Heads</h3>
+        </div>
+      </div>
+      <div class="row">
+        {{ range .Params.teamMembers.heads }}
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="{{ .image | absURL }}" alt="{{ .name }}" class="img-fluid">
+              <div class="social-overlay">
+                <a href="{{ .github }}" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="{{ .instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+            <h5 class="member-name text-center">{{ .name }}</h5>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+  
+      <!-- Mentors Section -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <h3>Mentors</h3>
+        </div>
+      </div>
+      <div class="row">
+        {{ range .Params.teamMembers.mentors }}
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="{{ .image | absURL }}" alt="{{ .name }}" class="img-fluid">
+              <div class="social-overlay">
+                <a href="{{ .github }}" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="{{ .instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+            <h5 class="member-name text-center">{{ .name }}</h5>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+  
+      <!-- Cores Section -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <h3>Cores</h3>
+        </div>
+      </div>
+      <div class="row">
+        {{ range .Params.teamMembers.cores }}
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="{{ .image | absURL }}" alt="{{ .name }}" class="img-fluid">
+              <div class="social-overlay">
+                <a href="{{ .github }}" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="{{ .instagram }}" target="_blank"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+            <h5 class="member-name text-center">{{ .name }}</h5>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  

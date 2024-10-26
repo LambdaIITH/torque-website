@@ -1,0 +1,36 @@
+#################### Banner #####################
+banner:
+  enable : true
+  title : "The Automobile and Design Club of IIT Hyderabad"
+  bg_image : "images/gallery/bg-5.jpg"
+
+#################### About #####################
+about:
+  enable : true
+  title : "About Us"
+  section : "About"
+  content : "Torque, the automobile club at IIT Hyderabad, is dedicated to fostering the passion of automobile enthusiasts. Our mission is to enhance mechanical knowledge among students. We conduct regular sessions, work on hands-on projects, and participate in competitions. Like other college automobile clubs, we host workshops, collaborate on vehicle design and construction, and engage in industry visits and networking events to provide a comprehensive learning experience."
+
+
+#################### projects ####################
+projects:
+  enable : true
+  section : "Projects"
+  title : "Projects"
+  content : "Explore the groundbreaking projects developed by the IITH Automobile and Design Club. With a focus on innovation, engineering excellence, and creative design, our projects aim to push the boundaries of automotive technology. Below, you can discover some of the key projects that showcase the ingenuity and passion of our club members."
+  projects_item:
+  - title : "Electric Vehicle Design"
+    image : "images/project_img.jpg"
+    content : "This project focuses on the design and development of an electric vehicle (EV) aimed at urban transportation. "
+    project_url : "projects/project-1/"
+    
+  - title : "Autonomous Driving System"
+    image : "images/project_img.jpg"
+    content : "This project focuses on developing a semi-autonomous driving system that enhances safety and driving comfort."
+    project_url : "projects/project-2/"
+    
+  - title : "Interior and Ergonomic Design"
+    image : "images/project_img.jpg"
+    content : "This project explores the design of vehicle interiors, focusing on comfort, aesthetics, and usability."
+    project_url : "projects/project-3/"
+
